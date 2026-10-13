@@ -194,7 +194,7 @@ if (NOT WIN32 OR NOT BUILD_SHARED_LIBS)
 
     llama_build(test-llama-archs.cpp)
 
-    llama_test(test-llama-archs NAME test-fp8-kv ARGS -a ^llama$ -b CPU -s 0)
+    llama_test(test-llama-archs NAME test-fp8-kv ARGS -a ^llama$)
 
     set(MODEL_DIR "${CMAKE_CURRENT_BINARY_DIR}/test-models/")
     file(MAKE_DIRECTORY "${MODEL_DIR}")
